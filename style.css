@@ -1,0 +1,127 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+#div1{
+    width: 40%;
+    height: 70vh;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background:linear-gradient(to right, rgb(71, 71, 71), rgb(108, 107, 107));
+    border-radius: 60px;
+    box-shadow: 5px 5px 10px rgb(201, 200, 200);
+}
+#div2{
+    height: 15%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+input{
+    width: 80%;
+    height: 40%;
+    padding-left: 8px;
+    border-radius: 50px;
+    background-color: black;
+    font-size: small;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px black;
+    color: gray;
+}
+h3{
+    color: rgb(255, 68, 0);
+    text-shadow: 2px 2px 5px black;
+}
+#imgdiv{
+    height: 60%;
+    width: 50%;
+    border-radius: 30px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px black;
+}
+button{
+    width: 50%;
+    height: 10%;
+    border-radius: 50px;  
+    background:linear-gradient(to right,rgb(125, 28, 215),rgb(255, 68, 0));
+    border: 2px solid rgb(255, 117, 67);
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px black;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.1);
+}
+#qrimage{
+    height:92%;
+    width: 92%;
+    border-radius: 5px;
+    display: none;
+}
+#downqr{
+    width: 11%;
+    height: 5vh;
+    margin-top: 2%;
+    font-weight: bold;
+    font-size: small;
+    box-shadow: 3px 3px 5px rgb(126, 126, 126);
+    background:linear-gradient(to right,rgb(172, 47, 2),orangered); 
+}
+
+
+@media(min-width:300px) and (max-width:700px){
+    #div1{
+        width: 98%;
+        border-radius: 50px;
+    }
+    #imgdiv{
+        width: 80%;
+    }
+    input{
+        width: 100%;
+    }
+    button{
+        width: 70%;
+    }
+    #downqr{
+        width: 45%;
+        margin-top: 7%;
+    }
+}
+
+
+@media(min-width:701px) and (max-width:1000px){
+    #div1{
+        width: 80%;
+    }
+    #imgdiv{
+        width: 70%;
+    }
+    input{
+        width: 90%;
+    }
+    button{
+        width: 70%;
+    }
+    #downqr{
+          width: 32%;
+        margin-top: 5%;
+        font-size: medium;
+    }
+}
